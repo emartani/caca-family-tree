@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Tree - Árvore Genealógica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Google tag (gtag.js) -->
+
+
+
+<body>
+
+  <h1>Caça-Palavras da árvore genealógica - Family Tree!</h1>
+
+  <div id="instructions">
+      <h2>Instruções:</h2>
+      <ol>
+        <li>Se estiver jogando no computador, escolha o nível de dificuldade do jogo antes de iniciar.</li>
+        <li>Se não souber qual a palavra, clique na interrogação que a palavra aparecerá.</li>
+      </ol>
+  </div>
+
+  <div>
+    <label for="nivel">Nível:</label>
+    <select id="nivel" onchange="gerarCacaPalavras()">
+      <option value="facil">Fácil</option>
+      <option value="dificil">Difícil</option>
+    </select>
+  </div>
+
+  <div id="game-area-container">
+    <div id="cacaPalavrasContainer">
+    </div>
+
+    
+  </div>
+
+  <div id="palavrasEncontrar">
+    <h2>Palavras a Encontrar:</h2>
+    <ul id="listaPalavras">
+      </ul>
+  </div>
+
+  <div id="parabensMensagem">
+      🎉 Uhuu! Você é um super detetive de palavras! 🥳 Encontrou todassss! 🤩
+  </div>
+
+  <div id="fireworksContainer"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
